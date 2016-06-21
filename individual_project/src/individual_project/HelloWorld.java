@@ -1,79 +1,89 @@
 package individual_project;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Random;
-import java.util.Scanner;
+
 
 public class HelloWorld {
 
+	private String str = "Hello World!";
 	
 	public HelloWorld(){
 		
 	}
 	
-	public void helloWorld() throws InterruptedException{
-		
-		
-		Scanner keyboard = new Scanner(System.in);
-		System.out.println("enter a String");
-		String str = keyboard.nextLine();
-		
-		BufferedWriter out = null;
-		try {
-			File file = new File("testfile.txt");
-			
-			if(!file.exists()){
-				file.createNewFile();
-			}
-			
-			FileWriter fstream = new FileWriter(file.getAbsoluteFile());
-			out = new BufferedWriter(fstream);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			System.out.print("Can't open file");
-		}
-		
-		
+	public void hello1(){
 		
 		Random rand = new Random();
 		for (int i=0; i < str.length(); i++){
-			int sleep = rand.nextInt(5000);
-			Thread.sleep(sleep);
-			System.out.print(str.charAt(i));
+			/*sleep for a random time, 0 - 10 seconds*/
+			int time = rand.nextInt(10000);
 			try {
-				out.write(str.charAt(i));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				System.err.println("Error: " + e.getMessage());
+				Thread.sleep(time);
+			} catch (InterruptedException e) {
 				
+				System.err.println("Error: " + e.getMessage());
 			}
-		}
-		try {
-			out.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.print(str.charAt(i));
+			
 		}
 		System.out.print("\n");
-		boolean loop = true;
-		
-		while(loop==true){
-			System.out.println("Do you want to continue?");
-			String ans = keyboard.nextLine();
-			if ((ans.equals("no"))||(ans.equals("n"))){
-				loop = false; 
-			}	
+		return;
+	}
+	
+	
+	public void hello2(){
+		for(int i=0; i<str.length(); i++){
+			int time = 1000;
+			try{
+			Thread.sleep(time);
+			}catch(InterruptedException e){
+				System.err.println("Error: " + e.getMessage());				
+			}
+			System.out.print(str.charAt(i));
 		}
-		keyboard.close();
+		System.out.print("\n");
+		return;
+	}
+	
+	public void hello3(){
+		System.out.print(str + "\n");
+		return;
+	}
+	
+	/*Linked list uses memory storing objects and get and add 
+	 * run in O(n) time*/
+	public void hello4(){
+		LinkedList<Character> list = new LinkedList<Character>();
+		for (int i = 0; i< str.length(); i++){
+			list.add(str.charAt(i));
+		}
+		for(int i = 0; i < str.length(); i++){
+		System.out.print(list.get(i));
+		}
+		System.out.print("\n");
+		return;
+	}
+	
+	/*Using ArrayList get and add run in amortised O(1) time*/
+	public void hello5(){
+		ArrayList<Character> list = new ArrayList<Character>();
+		for (int i = 0; i< str.length(); i++){
+			list.add(str.charAt(i));
+		}
+		for(int i = 0; i < str.length(); i++){
+		System.out.print(list.get(i));
+		}
+		System.out.print("\n");
 		return;
 	}
 	
 	public static void main(String[] args) throws InterruptedException{
 		HelloWorld run = new HelloWorld(); 
-		run.helloWorld();
+		run.hello1();
+		run.hello4();
+		run.hello5();
+		return;
 	}
 	
 }

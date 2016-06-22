@@ -1,4 +1,5 @@
-package individual_project;
+package hello_package;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
@@ -6,7 +7,7 @@ import java.util.Random;
 
 public class HelloWorld {
 
-	private String str = "Hello World!";
+	private String str = "0";
 	
 	public HelloWorld(){
 		
@@ -19,7 +20,7 @@ public class HelloWorld {
 		Random rand = new Random();
 		for (int i=0; i < str.length(); i++){
 			/*sleep for a random time, 0 - 10 seconds*/
-			int time = rand.nextInt(10000);
+			int time = rand.nextInt(100);
 			try {
 				Thread.sleep(time);
 			} catch (InterruptedException e) {
@@ -36,7 +37,7 @@ public class HelloWorld {
 	/*function prints "Hello World!", with one second between each character */
 	public void hello2(){
 		for(int i=0; i<str.length(); i++){
-			int time = 1000;
+			int time = 10;
 			try{
 			Thread.sleep(time);
 			}catch(InterruptedException e){
@@ -84,7 +85,12 @@ public class HelloWorld {
 	
 	public static void main(String[] args) throws InterruptedException{
 		HelloWorld run = new HelloWorld(); 
+		for(int i=1; i < 10000; i++){
+			run.str = run.str +" " + i;
+		}
 		//run.hello1();
+		//run.hello2();
+		run.hello3();
 		run.hello4();
 		run.hello5();
 		return;

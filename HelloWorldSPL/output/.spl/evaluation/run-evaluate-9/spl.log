@@ -1,0 +1,104 @@
+14:00:46,568 INFO cz.cuni.mff.spl.Run - Scanning project and building code ... 
+14:00:46,919 INFO Build - Obtaining and scanning main revision of the main project.
+14:00:48,173 DEBUG Build - Checked out revision [sourceRelative][this][] into [.spl/temporary/build-0/sourceCode/revision-0].
+14:00:51,256 DEBUG Build - Executed build command [sh -c ant].
+14:00:51,257 INFO Build - Project obtained.
+14:00:51,272 DEBUG cz.cuni.mff.spl.scanner.Scanner - Start initialization
+14:00:51,272 DEBUG cz.cuni.mff.spl.scanner.Scanner - Converting configuration file..
+14:00:51,279 DEBUG cz.cuni.mff.spl.scanner.Scanner - Converting finished.
+14:00:51,280 DEBUG cz.cuni.mff.spl.scanner.Scanner - Initialization completed.
+14:00:51,280 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning ..
+14:00:51,281 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning classes matching patterns :
+14:00:51,281 DEBUG cz.cuni.mff.spl.scanner.Scanner -   main.**
+14:00:51,371 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning method 'main' of class 'main.Measurement'
+14:00:51,385 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scan complete.
+14:00:51,385 INFO Build - Project scanned.
+14:00:51,423 INFO Build - Obtaining code for resolving ids to check if to load or perform measurements [2].
+14:00:51,424 INFO Build - Repositories to possibly access [2].
+14:00:51,425 INFO Build - Revisions to possibly checkout [2].
+14:00:51,429 INFO Build - [1/2] - Will measure.
+14:00:51,431 INFO Build - [2/2] - Will measure.
+14:00:51,431 INFO Build - Data will be loaded for measurements [0].
+14:00:51,432 INFO Build - Skipping measurements due to missing code [0].
+14:00:51,432 INFO Build - Creating samplers for measurements [2].
+14:00:51,436 ERROR cz.cuni.mff.spl.deploy.build.Assembler - Could not load generator class THIS@HEAD:main.StringGenerator#generate() (using file:/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0/build/).
+14:00:51,438 ERROR Build - Failed to create runtime for measurement [#7eac213e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701140048:main.HelloWorld#hello4()[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701140048:main.StringGenerator#generate()](10)].
+cz.cuni.mff.spl.deploy.build.exception.BuildException: Could not load generator class with custom URLClassLoader: THIS@HEAD:main.StringGenerator#generate()
+	at cz.cuni.mff.spl.deploy.build.Assembler.getClasses(Assembler.java:206)
+	at cz.cuni.mff.spl.deploy.build.Assembler.call(Assembler.java:481)
+	at cz.cuni.mff.spl.deploy.build.Builder.buildSampler(Builder.java:213)
+	at cz.cuni.mff.spl.deploy.build.Builder.call(Builder.java:318)
+	at cz.cuni.mff.spl.Run.build(Run.java:477)
+	at cz.cuni.mff.spl.Run.run(Run.java:371)
+	at cz.cuni.mff.spl.Main.main(Main.java:137)
+Caused by: java.lang.ClassNotFoundException: main.StringGenerator
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cz.cuni.mff.spl.deploy.build.Assembler.getClasses(Assembler.java:201)
+	... 6 more
+
+14:00:51,439 INFO Build - [1/2].
+14:00:51,441 ERROR cz.cuni.mff.spl.deploy.build.Assembler - Could not load generator class THIS@HEAD:main.StringGenerator#generate() (using file:/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0/build/).
+14:00:51,442 ERROR Build - Failed to create runtime for measurement [#b3925c7f|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701140048:main.HelloWorld#hello5()[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701140048:main.StringGenerator#generate()](10)].
+cz.cuni.mff.spl.deploy.build.exception.BuildException: Could not load generator class with custom URLClassLoader: THIS@HEAD:main.StringGenerator#generate()
+	at cz.cuni.mff.spl.deploy.build.Assembler.getClasses(Assembler.java:206)
+	at cz.cuni.mff.spl.deploy.build.Assembler.call(Assembler.java:481)
+	at cz.cuni.mff.spl.deploy.build.Builder.buildSampler(Builder.java:213)
+	at cz.cuni.mff.spl.deploy.build.Builder.call(Builder.java:318)
+	at cz.cuni.mff.spl.Run.build(Run.java:477)
+	at cz.cuni.mff.spl.Run.run(Run.java:371)
+	at cz.cuni.mff.spl.Main.main(Main.java:137)
+Caused by: java.lang.ClassNotFoundException: main.StringGenerator
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cz.cuni.mff.spl.deploy.build.Assembler.getClasses(Assembler.java:201)
+	... 6 more
+
+14:00:51,443 INFO Build - [2/2].
+14:00:51,452 INFO cz.cuni.mff.spl.Run - Scanned project and builded code.
+14:00:51,452 INFO cz.cuni.mff.spl.Run - Nothing to measure, skipping measurement.
+14:00:51,453 INFO cz.cuni.mff.spl.Run - Processing evaluation (generating graphs takes a lot of time) ... 
+14:00:51,460 INFO cz.cuni.mff.spl.Run - Evaluation output directory is [run-evaluate-9]
+14:00:51,818 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Evaluator output initialized.
+14:00:51,841 DEBUG cz.cuni.mff.spl.evaluator.input.StoreMeasurementDataProvider - Unable to load data for measurement sample [#b3925c7f|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701140048:main.HelloWorld#hello5()[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701140048:main.StringGenerator#generate()](10)]
+14:00:51,844 DEBUG cz.cuni.mff.spl.evaluator.input.StoreMeasurementDataProvider - Unable to load data for measurement sample [#7eac213e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701140048:main.HelloWorld#hello4()[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701140048:main.StringGenerator#generate()](10)]
+14:00:51,890 ERROR cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput - Data not found, unable to generate graph (DensityComparison) for THIS@HEAD:HelloWorld#hello5() [THIS@HEAD:StringGenerator#generate()] (10), THIS@HEAD:HelloWorld#hello4() [THIS@HEAD:StringGenerator#generate()] (10).
+cz.cuni.mff.spl.evaluator.input.MeasurementDataProvider$MeasurementDataNotFoundException
+	at cz.cuni.mff.spl.evaluator.graphs.ProbabilityDensityGraphCreator.createDensityComparisonGraph(ProbabilityDensityGraphCreator.java:140)
+	at cz.cuni.mff.spl.evaluator.graphs.GraphProvider.createChartFor(GraphProvider.java:72)
+	at cz.cuni.mff.spl.evaluator.graphs.GraphProvider.createChartPNGFor(GraphProvider.java:102)
+	at cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput.generateGraph(GraphEvaluatorOutput.java:174)
+	at cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput.generateComparisonOutput(GraphEvaluatorOutput.java:199)
+	at cz.cuni.mff.spl.evaluator.output.EvaluatorOutputAggregator.generateComparisonOutput(EvaluatorOutputAggregator.java:110)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateComparison(EvaluatorImpl.java:213)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateFormulaPart(EvaluatorImpl.java:147)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateFormula(EvaluatorImpl.java:124)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateAllFormulas(EvaluatorImpl.java:99)
+	at cz.cuni.mff.spl.evaluator.Evaluator.evaluate(Evaluator.java:82)
+	at cz.cuni.mff.spl.Run.evaluate(Run.java:719)
+	at cz.cuni.mff.spl.Run.run(Run.java:380)
+	at cz.cuni.mff.spl.Main.main(Main.java:137)
+
+14:00:51,892 ERROR cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput - Data not found, unable to generate graph (Histogram) for THIS@HEAD:HelloWorld#hello5() [THIS@HEAD:StringGenerator#generate()] (10), THIS@HEAD:HelloWorld#hello4() [THIS@HEAD:StringGenerator#generate()] (10).
+cz.cuni.mff.spl.evaluator.input.MeasurementDataProvider$MeasurementDataNotFoundException
+	at cz.cuni.mff.spl.evaluator.graphs.HistogramCreator.createHistogram(HistogramCreator.java:262)
+	at cz.cuni.mff.spl.evaluator.graphs.GraphProvider.createChartFor(GraphProvider.java:74)
+	at cz.cuni.mff.spl.evaluator.graphs.GraphProvider.createChartPNGFor(GraphProvider.java:102)
+	at cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput.generateGraph(GraphEvaluatorOutput.java:174)
+	at cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput.generateComparisonOutput(GraphEvaluatorOutput.java:199)
+	at cz.cuni.mff.spl.evaluator.output.EvaluatorOutputAggregator.generateComparisonOutput(EvaluatorOutputAggregator.java:110)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateComparison(EvaluatorImpl.java:213)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateFormulaPart(EvaluatorImpl.java:147)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateFormula(EvaluatorImpl.java:124)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateAllFormulas(EvaluatorImpl.java:99)
+	at cz.cuni.mff.spl.evaluator.Evaluator.evaluate(Evaluator.java:82)
+	at cz.cuni.mff.spl.Run.evaluate(Run.java:719)
+	at cz.cuni.mff.spl.Run.run(Run.java:380)
+	at cz.cuni.mff.spl.Main.main(Main.java:137)
+
+14:00:51,896 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Processed annotation at location:	 public static void main.Measurement.main(java.lang.String[])
+14:00:54,358 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Evaluator output closed.
+14:00:54,358 INFO cz.cuni.mff.spl.Run - Evaluation took 2.904506343 s
+14:00:54,359 INFO cz.cuni.mff.spl.Run - Evaluation finished.

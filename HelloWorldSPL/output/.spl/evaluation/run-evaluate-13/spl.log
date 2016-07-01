@@ -1,0 +1,108 @@
+14:18:21,800 INFO cz.cuni.mff.spl.Run - Scanning project and building code ... 
+14:18:22,130 INFO Build - Obtaining and scanning main revision of the main project.
+14:18:23,489 DEBUG Build - Checked out revision [sourceRelative][this][] into [.spl/temporary/build-0/sourceCode/revision-0].
+14:18:26,962 DEBUG Build - Executed build command [sh -c ant].
+14:18:26,963 INFO Build - Project obtained.
+14:18:26,975 DEBUG cz.cuni.mff.spl.scanner.Scanner - Start initialization
+14:18:26,975 DEBUG cz.cuni.mff.spl.scanner.Scanner - Converting configuration file..
+14:18:26,981 DEBUG cz.cuni.mff.spl.scanner.Scanner - Converting finished.
+14:18:26,981 DEBUG cz.cuni.mff.spl.scanner.Scanner - Initialization completed.
+14:18:26,982 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning ..
+14:18:26,982 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning classes matching patterns :
+14:18:26,982 DEBUG cz.cuni.mff.spl.scanner.Scanner -   main.**
+14:18:27,086 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning method 'main' of class 'main.Measurement'
+14:18:27,103 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scan complete.
+14:18:27,104 INFO Build - Project scanned.
+14:18:27,170 INFO Build - Obtaining code for resolving ids to check if to load or perform measurements [2].
+14:18:27,171 INFO Build - Repositories to possibly access [2].
+14:18:27,171 INFO Build - Revisions to possibly checkout [2].
+14:18:27,174 INFO Build - [1/2] - Will measure.
+14:18:27,175 INFO Build - [2/2] - Will measure.
+14:18:27,176 INFO Build - Data will be loaded for measurements [0].
+14:18:27,176 INFO Build - Skipping measurements due to missing code [0].
+14:18:27,177 INFO Build - Creating samplers for measurements [2].
+14:18:28,449 DEBUG Build - Created sampler for measurement [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)].
+14:18:28,449 INFO Build - [1/2].
+14:18:28,695 DEBUG Build - Created sampler for measurement [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)].
+14:18:28,695 INFO Build - [2/2].
+14:18:28,699 INFO cz.cuni.mff.spl.Run - Scanned project and builded code.
+14:18:28,783 INFO cz.cuni.mff.spl.Run - Starting measuring ... 
+14:18:28,783 INFO Execution - Starting server identified as [b287765a-05d0-4b5b-a041-8f77cc9fe650].
+14:18:28,784 DEBUG Execution - Created base directory.
+14:18:28,784 DEBUG Execution - Created server directory.
+14:18:28,896 INFO Execution - Transferred server binary.
+14:18:28,912 INFO Execution - Started server. Waiting for status
+14:18:29,052 INFO Execution - Success status received.
+14:18:29,052 INFO Execution - Transferring sampling code for measurements [2].
+14:18:29,053 DEBUG Execution - Transferred sampling code for [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)].
+14:18:29,054 INFO Execution - [1/2].
+14:18:29,055 DEBUG Execution - Transferred sampling code for [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)].
+14:18:29,055 INFO Execution - [2/2].
+14:18:29,057 INFO Execution - Transferred sampling configuration.
+14:18:29,058 INFO Execution - Created start file for the server.
+14:18:29,058 INFO cz.cuni.mff.spl.Run - Measuring in progress.
+14:18:29,059 INFO cz.cuni.mff.spl.Run - Waiting for measurements to finish ... 
+14:18:39,061 DEBUG Execution - Status [Error] of measurement [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)].
+14:18:39,064 INFO Execution - [1/2], result [Error].
+14:18:39,068 ERROR Execution - Job Err:
+Exception in thread "main" java.lang.ClassCastException: [Ljava.lang.String; cannot be cast to java.lang.String
+	at CSMethod.call(CSMethod.java:16)
+	at SMeasurement.<init>(SMeasurement.java:153)
+	at SMeasurement.main(SMeasurement.java:44)
+
+14:18:39,069 DEBUG Execution - Status [Error] of measurement [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)].
+14:18:39,070 INFO Execution - [2/2], result [Error].
+14:18:39,071 ERROR Execution - Job Err:
+Exception in thread "main" java.lang.ClassCastException: [Ljava.lang.String; cannot be cast to java.lang.String
+	at CSMethod.call(CSMethod.java:16)
+	at SMeasurement.<init>(SMeasurement.java:153)
+	at SMeasurement.main(SMeasurement.java:44)
+
+14:18:39,073 ERROR cz.cuni.mff.spl.Run - Some measurements failed.
+14:18:39,073 INFO cz.cuni.mff.spl.Run - Transfering measured data ... 
+14:18:39,074 ERROR cz.cuni.mff.spl.Run - Not transferring [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)]: measuring has failed.
+14:18:39,075 ERROR cz.cuni.mff.spl.Run - Not transferring [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)]: measuring has failed.
+14:18:39,076 INFO cz.cuni.mff.spl.Run - Measured data transferred.
+14:18:39,077 INFO cz.cuni.mff.spl.Run - Processing evaluation (generating graphs takes a lot of time) ... 
+14:18:39,086 INFO cz.cuni.mff.spl.Run - Evaluation output directory is [run-evaluate-13]
+14:18:39,498 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Evaluator output initialized.
+14:18:39,517 DEBUG cz.cuni.mff.spl.evaluator.input.StoreMeasurementDataProvider - Unable to load data for measurement sample [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)]
+14:18:39,519 DEBUG cz.cuni.mff.spl.evaluator.input.StoreMeasurementDataProvider - Unable to load data for measurement sample [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701141823:main.StringGenerator#generate()](10)]
+14:18:39,587 ERROR cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput - Data not found, unable to generate graph (DensityComparison) for THIS@HEAD:HelloWorld#hello5(String) [THIS@HEAD:StringGenerator#generate()] (10), THIS@HEAD:HelloWorld#hello4(String) [THIS@HEAD:StringGenerator#generate()] (10).
+cz.cuni.mff.spl.evaluator.input.MeasurementDataProvider$MeasurementDataNotFoundException
+	at cz.cuni.mff.spl.evaluator.graphs.ProbabilityDensityGraphCreator.createDensityComparisonGraph(ProbabilityDensityGraphCreator.java:140)
+	at cz.cuni.mff.spl.evaluator.graphs.GraphProvider.createChartFor(GraphProvider.java:72)
+	at cz.cuni.mff.spl.evaluator.graphs.GraphProvider.createChartPNGFor(GraphProvider.java:102)
+	at cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput.generateGraph(GraphEvaluatorOutput.java:174)
+	at cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput.generateComparisonOutput(GraphEvaluatorOutput.java:199)
+	at cz.cuni.mff.spl.evaluator.output.EvaluatorOutputAggregator.generateComparisonOutput(EvaluatorOutputAggregator.java:110)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateComparison(EvaluatorImpl.java:213)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateFormulaPart(EvaluatorImpl.java:147)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateFormula(EvaluatorImpl.java:124)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateAllFormulas(EvaluatorImpl.java:99)
+	at cz.cuni.mff.spl.evaluator.Evaluator.evaluate(Evaluator.java:82)
+	at cz.cuni.mff.spl.Run.evaluate(Run.java:719)
+	at cz.cuni.mff.spl.Run.run(Run.java:380)
+	at cz.cuni.mff.spl.Main.main(Main.java:137)
+
+14:18:39,681 ERROR cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput - Data not found, unable to generate graph (Histogram) for THIS@HEAD:HelloWorld#hello5(String) [THIS@HEAD:StringGenerator#generate()] (10), THIS@HEAD:HelloWorld#hello4(String) [THIS@HEAD:StringGenerator#generate()] (10).
+cz.cuni.mff.spl.evaluator.input.MeasurementDataProvider$MeasurementDataNotFoundException
+	at cz.cuni.mff.spl.evaluator.graphs.HistogramCreator.createHistogram(HistogramCreator.java:262)
+	at cz.cuni.mff.spl.evaluator.graphs.GraphProvider.createChartFor(GraphProvider.java:74)
+	at cz.cuni.mff.spl.evaluator.graphs.GraphProvider.createChartPNGFor(GraphProvider.java:102)
+	at cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput.generateGraph(GraphEvaluatorOutput.java:174)
+	at cz.cuni.mff.spl.evaluator.output.impl.graphs.GraphEvaluatorOutput.generateComparisonOutput(GraphEvaluatorOutput.java:199)
+	at cz.cuni.mff.spl.evaluator.output.EvaluatorOutputAggregator.generateComparisonOutput(EvaluatorOutputAggregator.java:110)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateComparison(EvaluatorImpl.java:213)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateFormulaPart(EvaluatorImpl.java:147)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateFormula(EvaluatorImpl.java:124)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateAllFormulas(EvaluatorImpl.java:99)
+	at cz.cuni.mff.spl.evaluator.Evaluator.evaluate(Evaluator.java:82)
+	at cz.cuni.mff.spl.Run.evaluate(Run.java:719)
+	at cz.cuni.mff.spl.Run.run(Run.java:380)
+	at cz.cuni.mff.spl.Main.main(Main.java:137)
+
+14:18:39,685 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Processed annotation at location:	 public static void main.Measurement.main(java.lang.String[])
+14:18:42,290 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Evaluator output closed.
+14:18:42,291 INFO cz.cuni.mff.spl.Run - Evaluation took 3.212915202 s
+14:18:42,291 INFO cz.cuni.mff.spl.Run - Evaluation finished.

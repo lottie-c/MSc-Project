@@ -1,0 +1,40 @@
+12:00:39,773 INFO cz.cuni.mff.spl.Run - Scanning project and building code ... 
+12:00:40,183 INFO Build - Obtaining and scanning main revision of the main project.
+12:00:41,456 DEBUG Build - Checked out revision [sourceRelative][this][] into [.spl/temporary/build-0/sourceCode/revision-0].
+12:00:44,829 DEBUG Build - Executed build command [sh -c ant].
+12:00:44,830 INFO Build - Project obtained.
+12:00:44,840 DEBUG cz.cuni.mff.spl.scanner.Scanner - Start initialization
+12:00:44,840 DEBUG cz.cuni.mff.spl.scanner.Scanner - Converting configuration file..
+12:00:44,844 DEBUG cz.cuni.mff.spl.scanner.Scanner - Converting finished.
+12:00:44,845 DEBUG cz.cuni.mff.spl.scanner.Scanner - Initialization completed.
+12:00:44,845 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning ..
+12:00:44,846 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning classes matching patterns :
+12:00:44,846 DEBUG cz.cuni.mff.spl.scanner.Scanner -   main.**
+12:00:44,946 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scan complete.
+12:00:44,947 INFO Build - Project scanned.
+12:00:45,008 INFO Build - Obtaining code for resolving ids to check if to load or perform measurements [0].
+12:00:45,008 INFO Build - Repositories to possibly access [2].
+12:00:45,009 INFO Build - Revisions to possibly checkout [2].
+12:00:45,009 INFO Build - Data will be loaded for measurements [0].
+12:00:45,010 INFO Build - Skipping measurements due to missing code [0].
+12:00:45,010 INFO Build - Creating samplers for measurements [0].
+12:00:45,013 INFO cz.cuni.mff.spl.Run - Scanned project and builded code.
+12:00:45,013 INFO cz.cuni.mff.spl.Run - Nothing to measure, skipping measurement.
+12:00:45,014 WARN cz.cuni.mff.spl.Run - Evaluation context information has no annotations.
+12:00:45,015 INFO cz.cuni.mff.spl.Run - Processing evaluation (generating graphs takes a lot of time) ... 
+12:00:45,021 INFO cz.cuni.mff.spl.Run - Evaluation output directory is [run-evaluate-0]
+12:00:45,424 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Evaluator output initialized.
+12:00:47,731 ERROR cz.cuni.mff.spl.evaluator.output.EvaluatorOutputAggregator - Error during output closing in class cz.cuni.mff.spl.evaluator.output.impl.html2.Html2EvaluatorOutput
+java.lang.NullPointerException
+	at cz.cuni.mff.spl.evaluator.output.impl.html2.Html2EvaluatorOutput.generateIndex(Html2EvaluatorOutput.java:663)
+	at cz.cuni.mff.spl.evaluator.output.impl.html2.Html2EvaluatorOutput.close(Html2EvaluatorOutput.java:640)
+	at cz.cuni.mff.spl.evaluator.output.EvaluatorOutputAggregator.close(EvaluatorOutputAggregator.java:146)
+	at cz.cuni.mff.spl.evaluator.EvaluatorImpl.evaluateAllFormulas(EvaluatorImpl.java:106)
+	at cz.cuni.mff.spl.evaluator.Evaluator.evaluate(Evaluator.java:82)
+	at cz.cuni.mff.spl.Run.evaluate(Run.java:719)
+	at cz.cuni.mff.spl.Run.run(Run.java:380)
+	at cz.cuni.mff.spl.Main.main(Main.java:137)
+
+12:00:47,732 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Evaluator output closed.
+12:00:47,732 INFO cz.cuni.mff.spl.Run - Evaluation took 2.717011464 s
+12:00:47,733 INFO cz.cuni.mff.spl.Run - Evaluation finished.

@@ -1,0 +1,62 @@
+14:26:38,224 INFO cz.cuni.mff.spl.Run - Scanning project and building code ... 
+14:26:38,593 INFO Build - Obtaining and scanning main revision of the main project.
+14:26:39,930 DEBUG Build - Checked out revision [sourceRelative][this][] into [.spl/temporary/build-0/sourceCode/revision-0].
+14:26:43,396 DEBUG Build - Executed build command [sh -c ant].
+14:26:43,397 INFO Build - Project obtained.
+14:26:43,408 DEBUG cz.cuni.mff.spl.scanner.Scanner - Start initialization
+14:26:43,408 DEBUG cz.cuni.mff.spl.scanner.Scanner - Converting configuration file..
+14:26:43,413 DEBUG cz.cuni.mff.spl.scanner.Scanner - Converting finished.
+14:26:43,414 DEBUG cz.cuni.mff.spl.scanner.Scanner - Initialization completed.
+14:26:43,414 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning ..
+14:26:43,415 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning classes matching patterns :
+14:26:43,415 DEBUG cz.cuni.mff.spl.scanner.Scanner -   main.**
+14:26:43,514 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scanning method 'main' of class 'main.Measurement'
+14:26:43,529 DEBUG cz.cuni.mff.spl.scanner.Scanner - Scan complete.
+14:26:43,530 INFO Build - Project scanned.
+14:26:43,602 INFO Build - Obtaining code for resolving ids to check if to load or perform measurements [2].
+14:26:43,603 INFO Build - Repositories to possibly access [2].
+14:26:43,603 INFO Build - Revisions to possibly checkout [2].
+14:26:43,607 INFO Build - [1/2] - Will measure.
+14:26:43,608 INFO Build - [2/2] - Will measure.
+14:26:43,609 INFO Build - Data will be loaded for measurements [0].
+14:26:43,609 INFO Build - Skipping measurements due to missing code [0].
+14:26:43,610 INFO Build - Creating samplers for measurements [2].
+14:26:44,868 DEBUG Build - Created sampler for measurement [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.StringGenerator#generate()](10)].
+14:26:44,869 INFO Build - [1/2].
+14:26:45,118 DEBUG Build - Created sampler for measurement [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.StringGenerator#generate()](10)].
+14:26:45,119 INFO Build - [2/2].
+14:26:45,122 INFO cz.cuni.mff.spl.Run - Scanned project and builded code.
+14:26:45,189 INFO cz.cuni.mff.spl.Run - Starting measuring ... 
+14:26:45,189 INFO Execution - Starting server identified as [def3d7d2-7154-4d90-b4cf-8a27da3681cf].
+14:26:45,190 DEBUG Execution - Created base directory.
+14:26:45,190 DEBUG Execution - Created server directory.
+14:26:45,317 INFO Execution - Transferred server binary.
+14:26:45,325 INFO Execution - Started server. Waiting for status
+14:26:45,524 INFO Execution - Success status received.
+14:26:45,527 INFO Execution - Transferring sampling code for measurements [2].
+14:26:45,531 DEBUG Execution - Transferred sampling code for [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.StringGenerator#generate()](10)].
+14:26:45,531 INFO Execution - [1/2].
+14:26:45,532 DEBUG Execution - Transferred sampling code for [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.StringGenerator#generate()](10)].
+14:26:45,533 INFO Execution - [2/2].
+14:26:45,536 INFO Execution - Transferred sampling configuration.
+14:26:45,538 INFO Execution - Created start file for the server.
+14:26:45,538 INFO cz.cuni.mff.spl.Run - Measuring in progress.
+14:26:45,538 INFO cz.cuni.mff.spl.Run - Waiting for measurements to finish ... 
+14:26:55,545 DEBUG Execution - Status [Successful] of measurement [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.StringGenerator#generate()](10)].
+14:26:55,546 INFO Execution - [1/2], result [Successful].
+14:26:55,547 DEBUG Execution - Status [Successful] of measurement [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.StringGenerator#generate()](10)].
+14:26:55,547 INFO Execution - [2/2], result [Successful].
+14:26:55,549 INFO cz.cuni.mff.spl.Run - Measurements finished successfully.
+14:26:55,549 INFO cz.cuni.mff.spl.Run - Transfering measured data ... 
+14:26:55,557 DEBUG cz.cuni.mff.spl.Run - Transferred measured data for [#ce1fe94e|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.HelloWorld#hello5(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.StringGenerator#generate()](10)].
+14:26:55,557 INFO cz.cuni.mff.spl.Run - [1/2].
+14:26:55,560 DEBUG cz.cuni.mff.spl.Run - Transferred measured data for [#9939ae0d|local|THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.HelloWorld#hello4(String)[THIS@/Users/lottiecarruthers/Documents/Masters/Project/HelloWorldSPL/output/.spl/temporary/build-0/sourceCode/revision-0-20160701142639:main.StringGenerator#generate()](10)].
+14:26:55,561 INFO cz.cuni.mff.spl.Run - [2/2].
+14:26:55,561 INFO cz.cuni.mff.spl.Run - Measured data transferred.
+14:26:55,562 INFO cz.cuni.mff.spl.Run - Processing evaluation (generating graphs takes a lot of time) ... 
+14:26:55,567 INFO cz.cuni.mff.spl.Run - Evaluation output directory is [run-evaluate-14]
+14:26:55,987 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Evaluator output initialized.
+14:27:05,980 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Processed annotation at location:	 public static void main.Measurement.main(java.lang.String[])
+14:27:08,665 INFO cz.cuni.mff.spl.evaluator.output.impl.EvaluationProgressMonitor - Evaluator output closed.
+14:27:08,665 INFO cz.cuni.mff.spl.Run - Evaluation took 13.102800812 s
+14:27:08,666 INFO cz.cuni.mff.spl.Run - Evaluation finished.

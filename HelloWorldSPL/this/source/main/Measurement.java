@@ -22,7 +22,8 @@ public class Measurement {
                             + "HelloWorld#hello5(String)"
             },
             formula = {
-                    "hello5[generator](10) < hello4[generator](10)"
+                    " for (n {100, 1000, 10000})"
+                    + "hello5[generator](n) < hello4[generator](n)"
             })
     
     public static void main(String args[]) {
